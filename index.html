@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <title>Arch Linux</title>
+  </head>
+
+  <body>
+    <nav>
+      <a id="arch-navbar-logo" href="#">
+        <img src="images/archlinux-navbar-logo.png" class="arch-navbar-logo" alt="Arch Linux logo">
+      </a>  
+
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+
+      <ul class="nav-list">
+        <li><a href="https://archlinux.org/packages/" class="hvr-underline-from-center" target="_blank">Packages</a></li>
+        <li><a href="https://bbs.archlinux.org/" class="hvr-underline-from-center" target="_blank">Forums</a></li>
+        <li><a href="https://wiki.archlinux.org/" class="hvr-underline-from-center" target="_blank">Wiki</a></li>
+        <li><a href="https://bugs.archlinux.org/" class="hvr-underline-from-center" target="_blank">Bugs</a></li>
+        <li><a href="https://security.archlinux.org/" class="hvr-underline-from-center" target="_blank">Security</a></li>
+        <li><a href="https://aur.archlinux.org/" class="hvr-underline-from-center" target="_blank">AUR</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <div class="header-title">
+        <img src="images/arch-linux-header-logo.png" alt="Arch Linux logo">
+
+        <h2>A simple, lightweight distribution</h2>
+
+        <a href="#download-arch-linux">
+          <button id="download-arch-button">Download</button>
+        </a>
+      </div>
+    </header>
+    
+    <main>
+      <section id="about-arch-linux">
+        <div class="title">
+          <div class="title-line"></div>
+          
+          <h2>About Arch Linux</h2>
+
+          <div class="title-line"></div>
+        </div>
+
+        <div id="text-about-arch">
+          <img src="images/arch-linux-pc.png" alt="PC with Arch Linux">
+
+          <p>Arch Linux is an independently developed, x86-64 general purpose GNU/Linux distribution versatile enough to suit any role.
+          Development focuses on simplicity, minimalism, and code elegance. Arch is installed as a minimal base system, configured by the
+          user upon which their own ideal environment is assembled by installing only what is required or desired for their unique purposes.</p>
+        </div>
+        
+        <div class="about-arch-cards">
+          <div class="card" id="card1">
+            <h2>Strong community</h2>
+
+            <p>Our community is diverse and helpful, and we pride ourselves on the range of skillsets and uses 
+            for Arch that stem from it.</p>
+          </div>
+
+          <div class="card">
+            <h2>Wiki</h2>
+
+            <p>Our <a href="https://wiki.archlinux.org/" target="_blank">wiki</a> is the place to learn about Arch. Look for guides on
+            the <a href="https://bbs.archlinux.org/" target="_blank">forum</a> whenever you need help with your system, from installation to everyday use!</p>
+          </div>
+
+          <div class="card" id="card3">
+            <h2>KISS</h2>
+
+            <p>Here we follow the KISS style! our system was designed to be simple and only work with what you 
+            need, making you the true owner of the system.</p>
+          </div>
+        </div>
+
+        <div class="about-arch-cards">
+          <div class="card" id="card1">
+            <h2>Rolling release</h2>
+
+            <p>Arch Linux uses a "rolling release" system which allows one-time installation and perpetual software upgrades. It is not generally necessary to reinstall 
+            or upgrade your Arch Linux system from one "version" to the next.</p>
+          </div>
+
+          <div class="card">
+            <h2>Pacman</h2>
+
+            <p>Arch Linux uses its own Pacman package manager.  which couples simple binary packages with an easy-to-use package build system.</p>
+          </div>
+
+          <div class="card" id="card3">
+            <h2>AUR</h2>
+
+            <p>Arch also offers the Arch Linux User Repository (AUR), which contains more than 49,000 build scripts, 
+            for compiling installable packages.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="download-arch-linux">
+        <div class="title">
+          <div class="title-line download-line"></div>
+          
+          <h2>Download</h2>
+
+          <div class="title-line download-line"></div>
+        </div>
+
+        <h3>It's free. It's open source. It's Arch Linux!</h3>
+
+        <div class="download-arch-card">
+          <div class="arch-logo-space">
+            <img src="images/arch-linux-logo.png" alt="Arch Linux logo">
+          </div>
+
+          <div class="arch-download-links">
+            <p>Don't forget to check the <a href="https://wiki.archlinux.org/title/Installation_guide" target="_blank">installation guide.</a></p>
+
+            <a href="#">
+              <button id="download-arch-button">Download ISO torrent</button>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="mobile-navbar.js"></script>
+  </body>
+</html>

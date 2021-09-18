@@ -1,0 +1,365 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-user-drag: none
+}
+
+/*Scroll bar style*/
+::-webkit-scrollbar {
+  width: 8px
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1AABEA;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #404040
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+/*Navbar style*/
+nav{
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Josefin Sans', sans-serif;
+  background: #303030;
+  height: 8vh;
+  width: 100%;
+  top: 0;
+}
+
+#arch-navbar-logo img{
+  width: 6vh;
+  margin-right: 70vh;
+}
+
+.nav-list{
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li{
+  margin-left: 32px;
+  font-weight: bolder;
+}
+
+.nav-list.active{
+  transform: translateX(0);
+}
+
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+  padding-bottom: 5px;
+}
+
+nav ul li a:hover{
+  color: #33bbff;
+}
+
+.hvr-underline-from-center{
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.hvr-underline-from-center:before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: #33bbff;
+  height: 2px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before{
+  left: 0;
+  right: 0;
+}
+
+/*Navbar for mobile devices style*/
+.mobile-menu{
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div{
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+.mobile-menu.active .line1{
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2{
+  opacity: 0;
+}
+
+.mobile-menu.active .line3{
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/*Header style*/
+header{
+  background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .9)), url(images/arch-header-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 65vh;
+  top: 0;
+}
+
+.header-title{
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #fff;
+  padding-top: 19vh;
+}
+
+.header-title img{
+  width: 48vh;
+  padding-bottom: 2vh;
+}
+
+#download-arch-button{
+  border: 2px solid #fff;
+  border-radius: 6px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  font-weight: bolder;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#download-arch-button:hover{
+  background-color: #fff;
+  color: #000;
+  transition: 0.8s;
+}
+
+/*About Arch style*/
+#about-arch-linux{
+  font-family: 'Josefin Sans', sans-serif;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  background: url(images/about-arch-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.title{
+  display: flex;
+  font-family: 'Josefin Sans', sans-serif;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.title-line{
+  height: 0.8px;
+  width: 33%;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  background-color: #000;
+}
+
+#text-about-arch{
+  margin-top: 5vh;
+  margin-left: 5vh;
+  margin-right: 35vh;
+  display: flex;
+}
+
+#text-about-arch img{
+  width: 50vh;
+  margin-left: 29vh;
+}
+
+#text-about-arch p{
+  margin-left: 6vh;
+  line-height: 4vh;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.about-arch-cards{
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+  margin-top: 5vh;
+}
+
+.card{
+  width: 40vh;
+  text-align: left;
+  line-height: 3vh;
+  padding: 6vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  border-radius: 7px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background-color: #33bbff;
+  color: #fff;
+}
+
+.card p{
+  font-size: 18px;
+}
+
+.card a{
+  color: #fff;
+}
+
+#card1{
+  margin-right: 5vh;
+}
+
+#card3{
+  margin-left: 5vh;
+}
+
+/*Download style*/
+#download-arch-linux{
+  font-family: 'Josefin Sans', sans-serif;
+  background: #303030;
+  height: 60vh;
+  width: 100%;
+  padding-top: 5vh;
+  color: #fff;
+}
+
+.download-line{
+  background-color: #fff;
+}
+
+#download-arch-linux h3{
+  text-align: center;
+  margin-top: 2vh;
+  font-size: 25px;
+  font-family: 'Indie Flower', cursive;
+}
+
+.download-arch-card{
+  width: 100vh;
+  text-align: left;
+  line-height: 3vh;
+  padding: 6vh;
+  margin-top: 5vh;
+  margin-bottom: 2vh;
+  border-radius: 7px;
+  border: 4px solid #fff;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  background-color: #33bbff;
+  color: #fff;
+  display: flex;
+  margin-left: 50vh;
+}
+
+.download-arch-card p{
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.download-arch-card a{
+  color: #fff;
+}
+
+.download-arch-card img{
+  width: 17vh;
+  margin-right: 5vh;
+}
+
+/*Desktop PC HIPDI*/
+@media screen and (min-width: 1201px){
+  .header-title{
+    font-size: 22px;
+  }
+
+  #download-arch-button{
+    margin-top: 4vh;
+    padding: 2vh;
+  }
+
+  #about-arch-linux p{
+    margin-top: 5vh;
+  }
+
+  #about-arch-linux h3{
+    margin-top: 2vh;
+  }
+}
+
+/*Ipad - tablets*/
+@media screen and (min-width: 769px) and (max-width: 1024px){
+  body{
+    overflow-x: hidden;
+  }
+
+  .hvr-underline-from-center{
+    display: none;
+  }
+
+  .nav-list{
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #303030;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+
+  .nav-list li{
+    margin-left: 0;
+    opacity: 0;
+  }
+
+  .mobile-menu{
+    display: block;
+  }
+}
