@@ -20,6 +20,7 @@
 }
 
 body{
+  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -32,14 +33,7 @@ nav{
   align-items: center;
   font-family: 'Josefin Sans', sans-serif;
   background: #303030;
-  height: 8vh;
-  width: 100%;
   top: 0;
-}
-
-#arch-navbar-logo img{
-  width: 6vh;
-  margin-right: 70vh;
 }
 
 .nav-list{
@@ -48,7 +42,6 @@ nav{
 }
 
 .nav-list li{
-  margin-left: 32px;
   font-weight: bolder;
 }
 
@@ -60,7 +53,6 @@ nav ul li a{
   color: #fff;
   text-decoration: none;
   transition: 0.3s;
-  padding-bottom: 5px;
 }
 
 nav ul li a:hover{
@@ -99,43 +91,6 @@ nav ul li a:hover{
   right: 0;
 }
 
-/*Navbar for mobile devices style*/
-.mobile-menu{
-  display: none;
-  cursor: pointer;
-}
-
-.mobile-menu div{
-  width: 32px;
-  height: 2px;
-  background: #fff;
-  margin: 8px;
-  transition: 0.3s;
-}
-
-.mobile-menu.active .line1{
-  transform: rotate(-45deg) translate(-8px, 8px);
-}
-
-.mobile-menu.active .line2{
-  opacity: 0;
-}
-
-.mobile-menu.active .line3{
-  transform: rotate(45deg) translate(-5px, -7px);
-}
-
-@keyframes navLinkFade{
-  from{
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to{
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
 /*Header style*/
 header{
   background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .9)), url(images/arch-header-background.jpg);
@@ -143,7 +98,6 @@ header{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  height: 65vh;
   top: 0;
 }
 
@@ -151,19 +105,12 @@ header{
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
   color: #fff;
-  padding-top: 19vh;
-}
-
-.header-title img{
-  width: 48vh;
-  padding-bottom: 2vh;
 }
 
 #download-arch-button{
   border: 2px solid #fff;
   border-radius: 6px;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 18px;
   font-weight: bolder;
   color: #fff;
   background-color: transparent;
@@ -180,8 +127,6 @@ header{
 /*About Arch style*/
 #about-arch-linux{
   font-family: 'Josefin Sans', sans-serif;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
   background: url(images/about-arch-background.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -193,33 +138,13 @@ header{
   font-family: 'Josefin Sans', sans-serif;
   align-items: center;
   justify-content: center;
-  font-size: 22px;
 }
 
 .title-line{
-  height: 0.8px;
-  width: 33%;
-  margin-left: 5vh;
-  margin-right: 5vh;
   background-color: #000;
 }
 
-#text-about-arch{
-  margin-top: 5vh;
-  margin-left: 5vh;
-  margin-right: 35vh;
-  display: flex;
-}
-
-#text-about-arch img{
-  width: 50vh;
-  margin-left: 29vh;
-}
-
 #text-about-arch p{
-  margin-left: 6vh;
-  line-height: 4vh;
-  font-size: 18px;
   font-weight: bolder;
 }
 
@@ -227,45 +152,24 @@ header{
   display: flex;
   justify-content: center;
   font-weight: bolder;
-  margin-top: 5vh;
 }
 
 .card{
-  width: 40vh;
-  text-align: left;
-  line-height: 3vh;
-  padding: 6vh;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
   border-radius: 7px;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   background-color: #33bbff;
   color: #fff;
 }
 
-.card p{
-  font-size: 18px;
-}
-
 .card a{
   color: #fff;
-}
-
-#card1{
-  margin-right: 5vh;
-}
-
-#card3{
-  margin-left: 5vh;
 }
 
 /*Download style*/
 #download-arch-linux{
   font-family: 'Josefin Sans', sans-serif;
   background: #303030;
-  height: 60vh;
   width: 100%;
-  padding-top: 5vh;
   color: #fff;
 }
 
@@ -275,29 +179,19 @@ header{
 
 #download-arch-linux h3{
   text-align: center;
-  margin-top: 2vh;
-  font-size: 25px;
   font-family: 'Indie Flower', cursive;
 }
 
 .download-arch-card{
-  width: 100vh;
-  text-align: left;
-  line-height: 3vh;
-  padding: 6vh;
-  margin-top: 5vh;
-  margin-bottom: 2vh;
   border-radius: 7px;
   border: 4px solid #fff;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   background-color: #33bbff;
   color: #fff;
   display: flex;
-  margin-left: 50vh;
 }
 
 .download-arch-card p{
-  font-size: 20px;
   font-weight: bolder;
 }
 
@@ -305,20 +199,41 @@ header{
   color: #fff;
 }
 
-.download-arch-card img{
-  width: 17vh;
-  margin-right: 5vh;
+/*Footer syle*/
+footer{
+  font-family: 'Josefin Sans', sans-serif;
+  color: #fff;
+  background-color: #33bbff;
+  text-align: center;
 }
 
-/*Desktop PC HIPDI*/
-@media screen and (min-width: 1201px){
-  .header-title{
-    font-size: 22px;
+footer h3{
+  font-weight: bolder;
+}
+
+
+/*Desktop PC - High DPI*/
+@media screen and (min-width: 1400px){
+  
+  /*Navbar style*/
+  nav{
+    height: 8vh;
+    width: 100%;
+    top: 0;
   }
 
-  #download-arch-button{
-    margin-top: 4vh;
-    padding: 2vh;
+  #arch-navbar-logo img{
+    width: 6vh;
+    margin-right: 70vh;
+  }
+
+  .nav-list li{
+    margin-left: 32px;
+    font-weight: bolder;
+  }
+
+  nav ul li a{
+    padding-bottom: 5px;
   }
 
   #about-arch-linux p{
@@ -328,38 +243,933 @@ header{
   #about-arch-linux h3{
     margin-top: 2vh;
   }
-}
 
-/*Ipad - tablets*/
-@media screen and (min-width: 769px) and (max-width: 1024px){
-  body{
-    overflow-x: hidden;
+  /*Header style*/
+  header{
+    height: 65vh;
   }
 
-  .hvr-underline-from-center{
+  .header-title{
+    padding-top: 19vh;
+    font-size: 22px;
+  }
+
+  .header-title img{
+    width: 48vh;
+    padding-bottom: 2vh;
+  }
+
+  #download-arch-button{
+    font-size: 18px;
+    margin-top: 4vh;
+    padding: 2vh;
+  }
+
+  #about-arch-linux{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
+  .title{
+    font-size: 22px;
+  }
+
+  .title-line{
+    height: 0.8px;
+    width: 33%;
+    margin-left: 5vh;
+    margin-right: 5vh;
+  }
+
+  #text-about-arch{
+    display: flex;
+    margin-top: 5vh;
+    margin-left: 5vh;
+    margin-right: 35vh;
+  }
+
+  #text-about-arch img{
+    width: 50vh;
+    margin-left: 29vh;
+  }
+
+  #text-about-arch p{
+    margin-left: 6vh;
+    line-height: 4vh;
+    font-size: 18px;
+  }
+
+  .about-arch-cards-mobile{
     display: none;
   }
 
-  .nav-list{
-    position: absolute;
-    top: 8vh;
-    right: 0;
-    width: 50vw;
-    height: 92vh;
-    background: #303030;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in;
+  .about-arch-cards{
+    margin-top: 5vh;
+  }
+
+  .card{
+    width: 40vh;
+    line-height: 3vh;
+    padding: 6vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border-radius: 7px;
+  }
+
+  .card p{
+    font-size: 18px;
+  }
+
+  #card1{
+    margin-right: 5vh;
+  }
+
+  #card3{
+    margin-left: 5vh;
+  }
+
+  /*Download style*/
+  #download-arch-linux{
+    height: 60vh;
+    padding-top: 5vh;
+  }
+
+  #download-arch-linux h3{
+    margin-top: 2vh;
+    font-size: 25px;
+  }
+
+  .download-line{
+    width: 36.5%;
+  }
+
+  .download-arch-card{
+    width: 90vh;
+    line-height: 3vh;
+    padding: 6vh;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    margin-left: 60vh;
+    border-radius: 7px;
+    border: 4px solid #fff;
+  }
+
+  .download-arch-card p{
+    font-size: 20px;
+  }
+
+  .download-arch-card img{
+    width: 17vh;
+    margin-right: 5vh;
+  }
+
+  /*Footer syle*/
+  footer{
+    padding-top: 1vh;
+  }
+
+  footer h3{
+    padding: 1vh;
+  }
+  
+}
+
+/*Desktop PC - Low DPI*/
+@media screen and (min-width: 1200px) and (max-width: 1399px){
+  
+  /*Navbar style*/
+  nav{
+    height: 8vh;
+    width: 100%;
+    top: 0;
+  }
+
+  #arch-navbar-logo img{
+    width: 6vh;
+    margin-right: 70vh;
   }
 
   .nav-list li{
-    margin-left: 0;
-    opacity: 0;
+    font-weight: bolder;
   }
 
-  .mobile-menu{
-    display: block;
+  nav ul li a{
+    padding-bottom: 5px;
   }
+
+  #about-arch-linux p{
+    margin-top: 5vh;
+  }
+
+  #about-arch-linux h3{
+    margin-top: 2vh;
+  }
+
+  /*Header style*/
+  header{
+    height: 65vh;
+  }
+
+  .header-title{
+    padding-top: 15vh;
+    font-size: 22px;
+  }
+
+  .header-title img{
+    width: 48vh;
+    padding-bottom: 2vh;
+  }
+
+  #download-arch-button{
+    font-size: 18px;
+    margin-top: 4vh;
+    padding: 2vh;
+  }
+
+  #about-arch-linux{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
+  .title{
+    font-size: 22px;
+  }
+
+  .title-line{
+    height: 0.8px;
+    width: 33%;
+    margin-left: 5vh;
+    margin-right: 5vh;
+  }
+
+  #text-about-arch{
+    display: flex;
+    margin-top: 5vh;
+    margin-left: 5vh;
+    margin-right: 35vh;
+  }
+
+  #text-about-arch img{
+    width: 50vh;
+    margin-left: 29vh;
+  }
+
+  #text-about-arch p{
+    margin-left: 6vh;
+    line-height: 4vh;
+    font-size: 18px;
+  }
+
+  .about-arch-cards-mobile{
+    display: none;
+  }
+
+  .about-arch-cards{
+    margin-top: 5vh;
+  }
+
+  .card{
+    width: 40vh;
+    line-height: 3vh;
+    padding: 6vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border-radius: 7px;
+  }
+
+  .card p{
+    font-size: 18px;
+  }
+
+  #card1{
+    margin-right: 5vh;
+  }
+
+  #card3{
+    margin-left: 5vh;
+  }
+
+  /*Download style*/
+  #download-arch-linux{
+    height: 60vh;
+    padding-top: 5vh;
+  }
+
+  #download-arch-linux h3{
+    margin-top: 2vh;
+    font-size: 25px;
+  }
+
+  .download-line{
+    width: 36.5%;
+  }
+
+  .download-arch-card{
+    width: 90vh;
+    line-height: 3vh;
+    padding: 6vh;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    margin-left: 40vh;
+    border-radius: 7px;
+    border: 4px solid #fff;
+  }
+
+  .download-arch-card p{
+    font-size: 20px;
+  }
+
+  .download-arch-card img{
+    width: 17vh;
+    margin-right: 5vh;
+  }
+
+  /*Footer syle*/
+  footer{
+    padding-top: 1vh;
+  }
+
+  footer h3{
+    padding: 1vh;
+  }
+  
+}
+
+/*Large Tablets*/
+@media screen and (min-width: 992px) and (max-width: 1199px){
+  
+  /*Navbar style*/
+  nav{
+    height: 8vh;
+    width: 100%;
+    top: 0;
+  }
+
+  #arch-navbar-logo img{
+    width: 6vh;
+    margin-right: 60vh;
+  }
+
+  .nav-list li{
+    font-weight: bolder;
+    padding-right: 3vh;
+  }
+
+  nav ul li a{
+    padding-bottom: 5px;
+  }
+
+  #about-arch-linux p{
+    margin-top: 5vh;
+  }
+
+  #about-arch-linux h3{
+    margin-top: 2vh;
+  }
+
+  /*Header style*/
+  header{
+    height: 55vh;
+  }
+
+  .header-title{
+    padding-top: 13vh;
+    font-size: 22px;
+  }
+
+  .header-title img{
+    width: 48vh;
+    padding-bottom: 2vh;
+  }
+
+  #download-arch-button{
+    font-size: 18px;
+    margin-top: 4vh;
+    padding: 2vh;
+  }
+
+  #about-arch-linux{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
+  .title{
+    font-size: 22px;
+  }
+
+  .title-line{
+    height: 0.8px;
+    width: 30%;
+    margin-left: 5vh;
+    margin-right: 5vh;
+  }
+
+  #text-about-arch{
+    display: flex;
+    margin-left: 5vh;
+    margin-right: 15vh;
+  }
+
+  #text-about-arch img{
+    width: 50vh;
+    height: 40vh;
+    margin-top: 5vh;
+    margin-left: 8vh;
+  }
+
+  #text-about-arch p{
+    margin-left: 6vh;
+    line-height: 4vh;
+    font-size: 22px;
+  }
+
+  .about-arch-cards-mobile{
+    display: none;
+  }
+
+  .about-arch-cards{
+    margin-top: 5vh;
+  }
+
+  .card{
+    width: 40vh;
+    line-height: 4vh;
+    padding: 4vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border-radius: 7px;
+  }
+
+  .card p{
+    font-size: 22px;
+  }
+
+  #card1{
+    margin-right: 5vh;
+  }
+
+  #card3{
+    margin-left: 5vh;
+  }
+
+  /*Download style*/
+  #download-arch-linux{
+    height: 60vh;
+    padding-top: 5vh;
+  }
+
+  #download-arch-linux h3{
+    margin-top: 2vh;
+    font-size: 25px;
+  }
+
+  .download-line{
+    width: 36.5%;
+  }
+
+  .download-arch-card{
+    width: 90vh;
+    line-height: 3vh;
+    padding: 6vh;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    margin-left: 22vh;
+    border-radius: 7px;
+    border: 4px solid #fff;
+  }
+
+  .download-arch-card p{
+    font-size: 22px;
+  }
+
+  .download-arch-card img{
+    width: 17vh;
+    margin-right: 5vh;
+  }
+
+  /*Footer syle*/
+  footer{
+    padding-top: 1vh;
+  }
+
+  footer h3{
+    padding: 1vh;
+  }
+  
+}
+
+/*Tablets*/
+@media screen and (min-width: 768px) and (max-width: 991px){
+  
+  /*Navbar style*/
+  nav{
+    height: 8vh;
+    width: 100%;
+    top: 0;
+  }
+
+  #arch-navbar-logo img{
+    width: 6vh;
+    margin-right: 20vh;
+  }
+
+  .nav-list li{
+    font-weight: bolder;
+    padding-right: 2.5vh;
+  }
+
+  nav ul li a{
+    padding-bottom: 5px;
+  }
+
+  #about-arch-linux p{
+    margin-top: 5vh;
+  }
+
+  #about-arch-linux h3{
+    margin-top: 2vh;
+  }
+
+  /*Header style*/
+  header{
+    height: 55vh;
+  }
+
+  .header-title{
+    padding-top: 15vh;
+    font-size: 22px;
+  }
+
+  .header-title img{
+    width: 48vh;
+    padding-bottom: 2vh;
+  }
+
+  #download-arch-button{
+    font-size: 18px;
+    margin-top: 4vh;
+    padding: 2vh;
+  }
+
+  #about-arch-linux{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
+  .title{
+    font-size: 20px;
+  }
+
+  .title-line{
+    height: 0.8px;
+    width: 30%;
+    margin-left: 2vh;
+    margin-right: 2vh;
+  }
+
+  #text-about-arch{
+    margin-top: 5vh;
+    margin-left: 5vh;
+    margin-right: 5vh;
+  }
+
+  #text-about-arch img{
+    width: 45vh;
+    height: 40vh;
+    margin-left: 10vh;
+  }
+
+  #text-about-arch p{
+    margin-left: 3vh;
+    line-height: 4vh;
+    font-size: 25px;
+  }
+
+  .about-arch-cards-mobile{
+    display: none;
+  }
+
+  .about-arch-cards{
+    margin-top: 2vh;
+  }
+
+  .card{
+    width: 40vh;
+    line-height: 3vh;
+    padding: 2vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border-radius: 7px;
+  }
+
+  .card p{
+    font-size: 22px;
+  }
+
+  #card1{
+    margin-right: 2vh;
+  }
+
+  #card3{
+    margin-left: 2vh;
+  }
+
+  /*Download style*/
+  #download-arch-linux{
+    height: 60vh;
+    padding-top: 5vh;
+  }
+
+  #download-arch-linux h3{
+    margin-top: 2vh;
+    font-size: 29px;
+  }
+
+  .download-line{
+    width: 36.5%;
+  }
+
+  .download-arch-card{
+    width: 60vh;
+    line-height: 3vh;
+    padding: 6vh;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    margin-left: 8vh;
+    border-radius: 7px;
+    border: 4px solid #fff;
+  }
+
+  .download-arch-card p{
+    font-size: 23px;
+  }
+
+  .download-arch-card img{
+    width: 17vh;
+    margin-right: 5vh;
+  }
+
+  /*Footer syle*/
+  footer{
+    padding-top: 1vh;
+  }
+
+  footer h3{
+    padding: 1vh;
+  }
+  
+}
+
+/*Smartphones - Large*/
+@media screen and (min-width: 576px) and (max-width: 767px){
+  
+  /*Navbar style*/
+  nav{
+    height: 12vh;
+    width: 100%;
+    top: 0;
+  }
+
+  #arch-navbar-logo img{
+    width: 8vh;
+    margin-right: 75vh;
+  }
+
+  .nav-list li{
+    font-weight: bolder;
+    padding-right: 5vh;
+    font-size: 13px;
+  }
+
+  nav ul li a{
+    padding-bottom: 5px;
+  }
+
+  #about-arch-linux p{
+    margin-top: 5vh;
+  }
+
+  #about-arch-linux h3{
+    margin-top: 2vh;
+  }
+
+  /*Header style*/
+  header{
+    height: 75vh;
+  }
+
+  .header-title{
+    padding-top: 16vh;
+    font-size: 13px;
+  }
+
+  .header-title img{
+    width: 68vh;
+    padding-bottom: 2vh;
+  }
+
+  #download-arch-button{
+    font-size: 13px;
+    margin-top: 4vh;
+    padding: 4vh;
+  }
+
+  #about-arch-linux{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
+  .title{
+    font-size: 13px;
+  }
+
+  .title-line{
+    height: 0.8px;
+    width: 33%;
+    margin-left: 5vh;
+    margin-right: 5vh;
+  }
+
+  #text-about-arch{
+    display: flex;
+    margin-left: 5vh;
+    margin-right: 15vh;
+  }
+
+  #text-about-arch img{
+    width: 60vh;
+    margin-top: 12vh;
+    margin-left: 10vh;
+  }
+
+  #text-about-arch p{
+    margin-top: 12vh;
+    margin-left: 18vh;
+    line-height: 6vh;
+    font-size: 14px;
+  }
+
+  .about-arch-cards-mobile{
+    display: none;
+  }
+
+  .about-arch-cards{
+    margin-top: 5vh;
+  }
+
+  .card{
+    width: 60vh;
+    line-height: 6vh;
+    padding: 6vh;
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+    border-radius: 7px;
+  }
+
+  .card h2{
+    font-size: 18px;
+  }
+
+  .card p{
+    font-size: 13px;
+  }
+
+  #card1{
+    margin-right: 10vh;
+  }
+
+  #card3{
+    margin-left: 10vh;
+  }
+
+  /*Download style*/
+  #download-arch-linux{
+    height: 80vh;
+    padding-top: 5vh;
+  }
+
+  #download-arch-linux h3{
+    margin-top: 2vh;
+    font-size: 20px;
+  }
+
+  .download-line{
+    width: 36.5%;
+  }
+
+  .download-arch-card{
+    width: 130vh;
+    line-height: 3vh;
+    padding: 6vh;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    margin-left: 38vh;
+    border-radius: 7px;
+    border: 4px solid #fff;
+  }
+
+  .download-arch-card p{
+    font-size: 15px;
+  }
+
+  .download-arch-card img{
+    width: 25vh;
+    margin-right: 5vh;
+  }
+
+  /*Footer syle*/
+  footer{
+    padding-top: 1vh;
+  }
+
+  footer h3{
+    padding: 1vh;
+    font-size: 13px;
+  }
+  
+}
+
+/*Smartphones*/
+@media screen and (min-width: 320px) and (max-width: 575px){
+  
+  /*Navbar style*/
+  nav{
+    display: none;
+  }
+
+  /*Header*/
+  #about-arch-linux p{
+    margin-top: 5vh;
+  }
+
+  #about-arch-linux h3{
+    margin-top: 2vh;
+  }
+
+  /*Header style*/
+  header{
+    height: 45vh;
+  }
+
+  .header-title{
+    padding-top: 6vh;
+    font-size: 14px;
+  }
+
+  .header-title img{
+    width: 38vh;
+    padding-bottom: 2vh;
+  }
+
+  #download-arch-button{
+    font-size: 18px;
+    margin-top: 7vh;
+    padding: 2vh;
+  }
+
+  #about-arch-linux{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
+  .title{
+    font-size: 14px;
+  }
+
+  .title-line{
+    height: 0.8px;
+    width: 13%;
+    margin-left: 3vh;
+    margin-right: 3vh;
+  }
+
+  #text-about-arch{
+    margin-top: 5vh;
+    margin-right: 5vh;
+  }
+
+  #text-about-arch img{
+    width: 40vh;
+    height: 30vh;
+    margin-left: 5vh;
+  }
+
+  #text-about-arch p{
+    margin-left: 5vh;
+    line-height: 4vh;
+    font-size: 19px;
+  }
+
+  .about-arch-cards{
+    display: none;
+  }
+
+  .about-arch-cards-mobile{
+    margin-top: 5vh;
+  }
+
+  .card{
+    width: 45vh;
+    line-height: 4vh;
+    padding: 6vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: 2vh;
+    border-radius: 7px;
+  }
+
+  .card p{
+    font-size: 18px;
+    font-weight: bolder;
+  }
+
+  /*Download style*/
+  #download-arch-linux{
+    height: 80vh;
+    padding-top: 5vh;
+  }
+
+  #download-arch-linux h3{
+    margin-top: 2vh;
+    font-size: 18px;
+  }
+
+  .download-line{
+    width: 36.5%;
+  }
+
+  .download-arch-card{
+    text-align: center;
+    display: grid;
+    width: 45vh;
+    height: 55vh;
+    line-height: 3vh;
+    padding: 2vh;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    margin-left: 2vh;
+    border-radius: 7px;
+    border: 4px solid #fff;
+  }
+
+  .download-arch-card p{
+    font-size: 22px;
+    line-height: 4vh;
+  }
+
+  .download-arch-card img{
+    width: 17vh;
+    margin-top: 3vh;
+  }
+
+  /*Footer syle*/
+  footer{
+    padding-top: 1vh;
+  }
+
+  footer h3{
+    padding: 1vh;
+    font-size: 15px;
+  }
+  
 }
