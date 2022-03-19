@@ -212,8 +212,8 @@ footer h3{
 }
 
 
-/*Desktop PC - High DPI*/
-@media screen and (min-width: 1400px){
+
+@media screen and (min-width: 1201px){
   
   /*Navbar style*/
   nav{
@@ -347,9 +347,8 @@ footer h3{
     width: 90vh;
     line-height: 3vh;
     padding: 6vh;
+    margin: auto;
     margin-top: 5vh;
-    margin-bottom: 2vh;
-    margin-left: 60vh;
     border-radius: 7px;
     border: 4px solid #fff;
   }
@@ -374,8 +373,7 @@ footer h3{
   
 }
 
-/*Desktop PC - Low DPI*/
-@media screen and (min-width: 1200px) and (max-width: 1399px){
+@media screen and (min-width: 1025px) and (max-width: 1200px){
   
   /*Navbar style*/
   nav{
@@ -509,8 +507,7 @@ footer h3{
     line-height: 3vh;
     padding: 6vh;
     margin-top: 5vh;
-    margin-bottom: 2vh;
-    margin-left: 40vh;
+    margin: auto;
     border-radius: 7px;
     border: 4px solid #fff;
   }
@@ -535,8 +532,7 @@ footer h3{
   
 }
 
-/*Large Tablets*/
-@media screen and (min-width: 992px) and (max-width: 1199px){
+@media screen and (min-width: 768px) and (max-width: 1024px){
   
   /*Navbar style*/
   nav{
@@ -547,7 +543,7 @@ footer h3{
 
   #arch-navbar-logo img{
     width: 6vh;
-    margin-right: 60vh;
+    margin-right: 10vh;
   }
 
   .nav-list li{
@@ -599,15 +595,14 @@ footer h3{
 
   .title-line{
     height: 0.8px;
-    width: 30%;
+    width: 20%;
     margin-left: 5vh;
     margin-right: 5vh;
   }
 
   #text-about-arch{
-    display: flex;
     margin-left: 5vh;
-    margin-right: 15vh;
+    margin-right: 5vh;
   }
 
   #text-about-arch img{
@@ -620,7 +615,7 @@ footer h3{
   #text-about-arch p{
     margin-left: 6vh;
     line-height: 4vh;
-    font-size: 22px;
+    font-size: 25px;
   }
 
   .about-arch-cards-mobile{
@@ -632,9 +627,9 @@ footer h3{
   }
 
   .card{
-    width: 40vh;
+    width: 50vh;
     line-height: 4vh;
-    padding: 4vh;
+    padding: 2vh;
     margin-top: 2vh;
     margin-bottom: 2vh;
     border-radius: 7px;
@@ -642,14 +637,15 @@ footer h3{
 
   .card p{
     font-size: 22px;
+    font-weight: bolder;
   }
 
   #card1{
-    margin-right: 5vh;
+    margin-right: 2vh;
   }
 
   #card3{
-    margin-left: 5vh;
+    margin-left: 2vh;
   }
 
   /*Download style*/
@@ -660,6 +656,7 @@ footer h3{
 
   #download-arch-linux h3{
     margin-top: 2vh;
+    padding-bottom: 5vh;
     font-size: 25px;
   }
 
@@ -668,12 +665,10 @@ footer h3{
   }
 
   .download-arch-card{
-    width: 90vh;
+    width: 65vh;
     line-height: 3vh;
     padding: 6vh;
-    margin-top: 5vh;
-    margin-bottom: 2vh;
-    margin-left: 22vh;
+    margin: auto;
     border-radius: 7px;
     border: 4px solid #fff;
   }
@@ -698,8 +693,7 @@ footer h3{
   
 }
 
-/*Tablets*/
-@media screen and (min-width: 768px) and (max-width: 991px){
+@media screen and (min-width: 481px) and (max-width: 767px){
   
   /*Navbar style*/
   nav{
@@ -834,8 +828,7 @@ footer h3{
     line-height: 3vh;
     padding: 6vh;
     margin-top: 5vh;
-    margin-bottom: 2vh;
-    margin-left: 8vh;
+    margin: auto;
     border-radius: 7px;
     border: 4px solid #fff;
   }
@@ -860,31 +853,14 @@ footer h3{
   
 }
 
-/*Smartphones - Large*/
-@media screen and (min-width: 576px) and (max-width: 767px){
+@media screen and (min-width: 375px) and (max-width: 480px){
   
   /*Navbar style*/
   nav{
-    height: 12vh;
-    width: 100%;
-    top: 0;
+    display: none;
   }
 
-  #arch-navbar-logo img{
-    width: 8vh;
-    margin-right: 75vh;
-  }
-
-  .nav-list li{
-    font-weight: bolder;
-    padding-right: 5vh;
-    font-size: 13px;
-  }
-
-  nav ul li a{
-    padding-bottom: 5px;
-  }
-
+  /*Header*/
   #about-arch-linux p{
     margin-top: 5vh;
   }
@@ -895,23 +871,23 @@ footer h3{
 
   /*Header style*/
   header{
-    height: 75vh;
+    height: 45vh;
   }
 
   .header-title{
-    padding-top: 16vh;
-    font-size: 13px;
+    padding-top: 6vh;
+    font-size: 14px;
   }
 
   .header-title img{
-    width: 68vh;
+    width: 38vh;
     padding-bottom: 2vh;
   }
 
   #download-arch-button{
-    font-size: 13px;
-    margin-top: 4vh;
-    padding: 4vh;
+    font-size: 18px;
+    margin-top: 7vh;
+    padding: 2vh;
   }
 
   #about-arch-linux{
@@ -920,66 +896,53 @@ footer h3{
   }
 
   .title{
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .title-line{
     height: 0.8px;
-    width: 33%;
-    margin-left: 5vh;
-    margin-right: 5vh;
+    width: 13%;
+    margin-left: 3vh;
+    margin-right: 3vh;
   }
 
   #text-about-arch{
-    display: flex;
-    margin-left: 5vh;
-    margin-right: 15vh;
+    margin-top: 5vh;
+    margin-right: 5vh;
   }
 
   #text-about-arch img{
-    width: 60vh;
-    margin-top: 12vh;
-    margin-left: 10vh;
+    width: 40vh;
+    height: 30vh;
+    margin-left: 3vh;
   }
 
   #text-about-arch p{
-    margin-top: 12vh;
-    margin-left: 18vh;
-    line-height: 6vh;
-    font-size: 14px;
-  }
-
-  .about-arch-cards-mobile{
-    display: none;
+    margin-left: 5vh;
+    line-height: 4vh;
+    font-size: 19px;
   }
 
   .about-arch-cards{
+    display: none;
+  }
+
+  .about-arch-cards-mobile{
     margin-top: 5vh;
   }
 
   .card{
-    width: 60vh;
-    line-height: 6vh;
+    width: 40vh;
+    line-height: 4vh;
     padding: 6vh;
-    margin-top: 10vh;
+    margin: auto;
     margin-bottom: 2vh;
     border-radius: 7px;
   }
 
-  .card h2{
-    font-size: 18px;
-  }
-
   .card p{
-    font-size: 13px;
-  }
-
-  #card1{
-    margin-right: 10vh;
-  }
-
-  #card3{
-    margin-left: 10vh;
+    font-size: 20px;
+    font-weight: bolder;
   }
 
   /*Download style*/
@@ -990,7 +953,7 @@ footer h3{
 
   #download-arch-linux h3{
     margin-top: 2vh;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .download-line{
@@ -998,23 +961,27 @@ footer h3{
   }
 
   .download-arch-card{
-    width: 130vh;
+    text-align: center;
+    display: grid;
+    width: 45vh;
+    height: 55vh;
     line-height: 3vh;
-    padding: 6vh;
+    padding: 2vh;
+    margin: auto;
     margin-top: 5vh;
     margin-bottom: 2vh;
-    margin-left: 38vh;
     border-radius: 7px;
     border: 4px solid #fff;
   }
 
   .download-arch-card p{
-    font-size: 15px;
+    font-size: 22px;
+    line-height: 4vh;
   }
 
   .download-arch-card img{
-    width: 25vh;
-    margin-right: 5vh;
+    width: 17vh;
+    margin-top: 3vh;
   }
 
   /*Footer syle*/
@@ -1024,13 +991,13 @@ footer h3{
 
   footer h3{
     padding: 1vh;
-    font-size: 13px;
+    font-size: 15px;
   }
   
 }
 
-/*Smartphones*/
-@media screen and (min-width: 320px) and (max-width: 575px){
+
+@media screen and (min-width: 320px) and (max-width: 374px){
   
   /*Navbar style*/
   nav{
@@ -1145,9 +1112,9 @@ footer h3{
     height: 55vh;
     line-height: 3vh;
     padding: 2vh;
+    margin: auto;
     margin-top: 5vh;
     margin-bottom: 2vh;
-    margin-left: 2vh;
     border-radius: 7px;
     border: 4px solid #fff;
   }
