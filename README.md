@@ -13,11 +13,10 @@
 
 ## Technologies
 <p>
-The site was made with the classic front-end combo:
+The site was made with:
 <ul>
   <li>HTML</li>
   <li>CSS</li>
-  <li>Javascript</li>
 </ul>
 No frameworks were used, everything was done manually :).
 </p>
