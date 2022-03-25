@@ -1,4 +1,4 @@
-# Arch-Linux-Website
+# Arch-Linux-Website.
 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/44658989/160189655-73efe84d-1998-423a-828e-39f05c818b33.png" width="600">
