@@ -5,7 +5,7 @@
 </div>
 
 <h4 align="center">
- | <a href="https://vercel.com/breno7164/arch-linux-website">See the website</a> |
+ | <a href="https://arch-linux-website.vercel.app/">See the website</a> |
 </h4>
 
 > ## &#128024; Description 
