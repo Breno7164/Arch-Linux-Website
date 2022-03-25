@@ -5,7 +5,7 @@
 </div>
 
 <h4 align="center">
- | <a href="https://vercel.com/breno7164/arch-linux-website">See the website</a> |
+ | <a href="https://vercel.com/breno7164/arch-linux-website" target="_blank">See the website</a> |
 </h4>
 
 ## Description 
@@ -23,5 +23,5 @@ No frameworks were used, everything was done manually :).
 </p>
 
 <h4 align="center">
-  | Made by Breno Barbosa. See my <a href="https://www.linkedin.com/in/breno-barbosa-2683181a7/">LinkedIn</a> |
+  | Made by Breno Barbosa. See my <a href="https://www.linkedin.com/in/breno-barbosa-2683181a7/" target="_blank">LinkedIn</a> |
 </h4>
