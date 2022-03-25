@@ -1,7 +1,7 @@
 # Arch-Linux-Website
 
 <p align="center">
-  <img width="400" src="src/assets/read_me/website-sreenshot.png>
+  <img width="400" src="src/assets/read_me/website-screenshot.png>
 </p>
 
 ## Description 
