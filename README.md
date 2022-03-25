@@ -8,10 +8,10 @@
  | <a href="https://vercel.com/breno7164/arch-linux-website">See the website</a> |
 </h4>
 
-## Description 
+> ## &#128024; Description 
 <p>A project that came up with the desire to make Arch Linux more accessible. It is a rework of the original site, keeping the main content in a more direct and modern way. This project is open to the community, so it is open to contributions to make it better and better.</p>
 
-## Technologies
+> ## &#128010; Technologies
 <p>
 The site was made with:
 <ul>
@@ -21,7 +21,7 @@ The site was made with:
 No frameworks were used, everything was done manually :).
 </p>
 
-## Warning
+> ## &#9888;&#65039; Warning 
 <p>This site has emerged as a personal project, but contributions are welcome. This is NOT the official Repository of Arch Linux, so the changes will not appear on the <a href="https://archlinux.org/">official website</a>.</p>
 
 <h4 align="center">
