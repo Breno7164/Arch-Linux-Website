@@ -22,6 +22,9 @@ The site was made with the classic front-end combo:
 No frameworks were used, everything was done manually :).
 </p>
 
+## Warning
+<p>This site has emerged as a personal project, but contributions are welcome. This is NOT the official Repository of Arch Linux, so the changes will not appear on the <a href="https://archlinux.org/">official website</a></p>
+
 <h4 align="center">
   | Made by Breno Barbosa. See my <a href="https://www.linkedin.com/in/breno-barbosa-2683181a7/">LinkedIn</a> |
 </h4>
